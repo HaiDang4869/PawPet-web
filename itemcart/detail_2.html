@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" class="css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Product detail</title>
+</head>
+
+<body>
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="whiskas.jpg" width="100%" id="ProductImg">
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="whiskas1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="whiskas2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="whiskas3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="whiskas4.jpg" width="100%" class="small-img">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-2">
+				<a href="../kscho.html">Home</a>
+				<h2>Thức ăn cho mèo thương hiệu Whiskas</h2>
+				<p>HSD trên 11 tháng</p>
+				<h4><strike>330.000 VND</strike>&nbsp;318.000 VNĐ</h4>
+				<b><i class="fa fa-lightbulb-o">&nbsp;</i>Nguồn gốc sản phẩm</b>
+			  <p>Đây là một thương hiệu thức ăn dành cho mèo có thời gian hoạt động lâu năm trên thế giới, chính thức được ra mắt trên thị trường Mỹ vào năm 1936 và sau đó mở rộng trên khắp thế giới.</p>
+				<br>
+				<b>Hàm lượng dinh dưỡng:</b>
+				<p><i class=" fa fa-star"></i>&nbsp;Tinh bột carbohydrate, chất béo lipit, chất đạm protein, các axit amin, amino axit, chất xơ hòa tan, DHA, Omega 3 và 6, taurine, sắt, canxi, kẽm, phốt pho, vitamin E, B1, B12, B6,…</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Tất cả những dưỡng chất này được kết hợp khoa học và cân bằng sẽ giúp các chú mèo phát triển khỏe mạnh cả về thể chất và trí não.</p>
+				<a style="font-size: 1.1rem" href="cart.html" class="btn"><i class="fa fa-cart-plus"></i>&nbsp;Chọn mua</a>
+				<a href="detail_3.html" class="btn">Sản phẩm tiếp theo</a>
+			</div>
+			<div class="tp">
+				<b>Thành phần: </b><i> Ngũ cốc nguyên cám (ngô, lúa mì), phụ phẩm gia cầm, dầu thực vật ( dầu cọ, đậu nành), cá biển, bột lúa mì, vitamin và khoáng chất, màu thực phẩm, chất bảo quản và hương liệu.</i>
+				<br>
+				<b>HDSD: </b>Xem trên bao bì.
+				<br>
+				<b>Bảo quản: </b>Nơi khô ráo, thoáng mát, tránh ánh sáng trực tiếp.
+			</div>
+		</div>
+	</div>
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var smallimg = document.getElementsByClassName("small-img");
+		
+		smallimg[0].onclick = function()
+		{
+			ProductImg.src = smallimg[0].src;
+		}
+		smallimg[1].onclick = function()
+		{
+			ProductImg.src = smallimg[1].src;
+		}
+		smallimg[2].onclick = function()
+		{
+			ProductImg.src = smallimg[2].src;
+		}
+		smallimg[3].onclick = function()
+		{
+			ProductImg.src = smallimg[3].src;
+		}
+	</script>
+	<script src="../script.js"></script>
+</body>
+</html>

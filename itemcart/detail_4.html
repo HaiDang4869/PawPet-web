@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" class="css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Product detail</title>
+</head>
+
+<body>
+	<div class="small-container single-product">s
+		<div class="row">
+			<div class="col-2">
+				<img src="pedigree3.jpg" width="100%" id="ProductImg">
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="pedigree.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="pedigree1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="pedigree2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="pedigree4.jpg" width="100%" class="small-img">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-2">
+				<a href="../kscho.html">Home</a>
+				<h2>Thức ăn cho chó thương hiệu Pedigree</h2>
+				<p>HSD trên 11 tháng</p>
+				<h4><strike>400.000 VND</strike>&nbsp;360.000 VNĐ</h4>
+				<b><i class="fa fa-lightbulb-o">&nbsp;</i>Nguồn gốc sản phẩm</b>
+			  <p>Đây là thương hiệu phổ biến trên toàn Thế Giới với quy mô lớn các dòng sản phẩm cho chó mang tên “Chappie”. Đến năm 1975, Pedigree trở thành một bộ phận trong chuỗi PetCare nổi tiếng hàng đầu thuộc tập đoàn Mars, Mỹ.</p>
+				<br>
+				<b>Ưu điểm:</b>
+				<p><i class=" fa fa-star"></i>&nbsp;Thức ăn của Pedigree còn có những sản phẩm chăm sóc riêng cho làn da và lông chó.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Các dưỡng chất trong sản phẩm Pedigree cung cấp canxi giúp chăm sóc hàm răng chó và khung xương chắc khỏe.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Không chứa hóa chất và các chất độc hại.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Dễ tiêu hóa, tránh tình trạng mèo khó tiêu, bị táo bón.</p>
+				<a style="font-size: 1.1rem" href="cart.html" class="btn"><i class="fa fa-cart-plus"></i>&nbsp;Chọn mua</a>
+				<a href="detail_1.html" class="btn">Sản phẩm tiếp theo</a>
+			</div>
+			<div class="tp">
+				<b>Thành phần: </b><i>Ngũ cốc nguyên hạt (bắp và gạo), bột sản phẩm gia cầm phụ, thực vật (dầu nành và bắp), bột cá, bột sắn, mỡ gà, men sấy khô, bột tiêu hóa cá, thịt cá thu, muối iot, taurine, vitamin và khoáng chất, chất chống oxy hóa, màu thực phẩm.</i>
+				<br>
+				<b>HDSD: </b>Xem trên bao bì.
+				<br>
+				<b>Bảo quản: </b>Nơi khô ráo, thoáng mát, tránh ánh sáng trực tiếp.
+			</div>
+		</div>
+	</div>
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var smallimg = document.getElementsByClassName("small-img");
+		
+		smallimg[0].onclick = function()
+		{
+			ProductImg.src = smallimg[0].src;
+		}
+		smallimg[1].onclick = function()
+		{
+			ProductImg.src = smallimg[1].src;
+		}
+		smallimg[2].onclick = function()
+		{
+			ProductImg.src = smallimg[2].src;
+		}
+		smallimg[3].onclick = function()
+		{
+			ProductImg.src = smallimg[3].src;
+		}
+	</script>
+	<script src="../script.js"></script>
+</body>
+</html>

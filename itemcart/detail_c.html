@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style_1.css" class="css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Product detail</title>
+</head>
+
+<body>
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="Ao_16.jpg" width="100%" id="ProductImg">
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="Ao_16_1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Ao_16_2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Ao_16_3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Ao_16_4.jpg" width="100%" class="small-img">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-2">
+				<a href="../kscho.html">Home</a>
+				<h2>Mũ cho chó mèo AMBABY PET 1JXS003</h2>
+				<h4><strike>300.000 VND</strike>&nbsp;225.000 VNĐ</h4>
+				<b>Lợi ích chính:</b>
+				<p><i class=" fa fa-star"></i>&nbsp;Mũ cho chó mèo AMBABY PET 1JXS003 sẽ làm cho thú cưng trở nên sành điệu và xinh xắn.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Sản phẩm được thiết kế với chất liệu cotton và gia công tỉ mỉ.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Kiểu dáng dễ mặc, dễ vận động đem đến sự thoải mái cho chó mèo.</p>
+				<p><i class=" fa fa-star"></i>&nbsp;Có nhiều kích cỡ cho bạn lựa chọn phù hợp như XS, S, M, L, XL.</p>
+				<select>
+					<option>Chọn kích cỡ</option>
+					<option>size S</option>
+					<option>size M</option>
+					<option>size L</option>
+					<option>size XL</option>
+				</select>
+				<a style="font-size: 1.1rem" href="cart_02.html" class="btn"><i class="fa fa-cart-plus"></i>&nbsp;Chọn mua</a>
+				<a href="detail_d.html" class="btn">Sản phẩm tiếp theo</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var smallimg = document.getElementsByClassName("small-img");
+		
+		smallimg[0].onclick = function()
+		{
+			ProductImg.src = smallimg[0].src;
+		}
+		smallimg[1].onclick = function()
+		{
+			ProductImg.src = smallimg[1].src;
+		}
+		smallimg[2].onclick = function()
+		{
+			ProductImg.src = smallimg[2].src;
+		}
+		smallimg[3].onclick = function()
+		{
+			ProductImg.src = smallimg[3].src;
+		}
+	</script>
+	<script src="../script.js"></script>
+</body>
+</html>
